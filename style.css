@@ -6,7 +6,12 @@
   font-family: 'Caveat', sans-serif;
 }
 
+/* body {
+  margin: 0 auto;
+} */
+
 .wrapper {
+  overflow-x: hidden;
   margin: 0 auto;
   display: grid;
   grid-template-areas: "info main";
@@ -189,6 +194,7 @@
   /* text-decoration: underline; */
 }
 
+
 .button >a {
   color: white;
   text-decoration: none;
@@ -222,10 +228,15 @@
 
 .languages-block {
   margin-top: 40px;
+  /* width: 100%; */
+  /* height: auto; */
+
 }
 
 .lang-content {
   color: rgb(100, 100, 100); 
+  /* width: auto;
+  height: auto; */
 }
 
 .lang-content div {
@@ -239,7 +250,7 @@
 
 .box1 {
   position: relative;
-  width: 500px;
+  max-width: 500px;
   height: 14px;
   border: 1px solid rgba(52, 0, 0, 0.8);
   margin-bottom: 5px;
@@ -248,17 +259,16 @@
 
 .fill-box1 {
   position: absolute;
-  width: 388px;
-  height: 14px;
+  width: 75%;
+  height: 13px;
   left: 0;
   background-color: #340000;
   border-radius: 15px 0 0 0;
-
 }
 
 .box2 {
   position: relative;
-  width: 500px;
+  max-width: 500px;
   height: 14px;
   border: 1px solid rgba(52, 0, 0, 0.8);
   margin-bottom: 5px;
@@ -267,38 +277,34 @@
 
 .fill-box2 {
   position: absolute;
-  width: 489px;
-  height: 14px;
+  width: 90%;
+  height: 13px;
   left: 0;
   background-color: #340000;
   border-radius: 15px 0 0 0;
-
 }
 
 .box3 {
   position: relative;
-  width: 500px;
+  max-width: 500px;
   height: 14px;
   border: 1px solid rgba(52, 0, 0, 0.8);
   margin-bottom: 5px;
   border-radius: 15px 0 0 0;
 }
 
-.fill-box3
- {
+.fill-box3 {
   position: absolute;
-  width: 450px;
-  height: 14px;
+  width: 100%;
+  height: 13px;
   left: 0;
   background-color: #340000;
   border-radius: 15px 0 0 0;
-
 }
-
 
 .box4 {
   position: relative;
-  width: 500px;
+  max-width: 500px;
   height: 14px;
   border: 1px solid rgba(52, 0, 0, 0.8);
   margin-bottom: 5px;
@@ -307,8 +313,8 @@
 
 .fill-box4 {
   position: absolute;
-  width: 250px;
-  height: 14px;
+  width: 55%;
+  height: 13px;
   left: 0;
   background-color: #340000;
   border-radius: 15px 0 0 0;
@@ -316,11 +322,20 @@
 
 
 
+
+
   @media (max-width: 749px) {
     .wrapper{
+      margin: 0 auto;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
+      /* flex-direction: row; */
+      flex-wrap: wrap;
+      padding: 10px;
+      /* max-width: 370px; */
     }
+
+
 
     .name span {
       text-align: right;
@@ -328,7 +343,9 @@
     }
 
     .skills {
-      margin-left: 20px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
     }
 
     
@@ -348,3 +365,6 @@
     }
 
   }
+
+
+
