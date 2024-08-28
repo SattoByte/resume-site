@@ -366,5 +366,21 @@
 
   }
 
+  .link a {
+    border: 1px solid #340000;
+    padding: 6px;
+    border-radius: 15px;
+    color: #340000;
+    text-decoration: inherit;
+    /* border: 1px dashed red; */
+    font-weight: 600;
+
+    &:hover {
+      color: #dedede;
+      background-color: #340000;
+      transition: 0.3s all ease-in-out;
+    }
+  }
+
 
 
